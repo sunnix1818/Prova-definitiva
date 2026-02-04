@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Control</title>
+  <link rel="stylesheet" href="css/ui.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <div id="menu"></div>
+
+  <canvas id="map"></canvas>
+
+  <div id="hud">
+    <h2 id="nationName"></h2>
+    <p>📅 <span id="date"></span></p>
+    <hr>
+    <p>👥 Popolazione: <span id="pop"></span></p>
+    <p>💰 Soldi: <span id="money"></span></p>
+    <p>⚔️ Truppe: <span id="troops"></span></p>
+    <p>🧪 Tecnologia: <span id="tech"></span></p>
+    <hr>
+    <select id="mapView">
+      <option value="normal">Vista normale</option>
+      <option value="diplomacy">Vista diplomatica</option>
+    </select>
+    <br><br>
+    <button id="endTurn">Avanza turno</button>
+  </div>
+
+  <script type="module" src="js/core.js"></script>
+</body>
+</html>
